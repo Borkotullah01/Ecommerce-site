@@ -1,0 +1,319 @@
+/* Browser reset code start */
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: sans-serif;
+}
+
+/* Browser reset code end */
+
+/* Header section style start */
+.container {
+    width: 100%;
+    height: 100vh;
+}
+
+.logo {
+    position: absolute;
+    left: 90px;
+    top: 50px;
+}
+.logo a {
+    font-size: 2rem;
+    color: #000;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.searchArea {
+    position: fixed;
+    right: 90px;
+    top: 50px;
+    background-color: #fff;
+    width: 200px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10% 10% 10% 10% / 50% 50% 50%;
+    box-sizing: border-box;
+    z-index: 1;
+    border: 1px solid rgba(167, 158, 245, 0.2);
+}
+.searchbox input{
+    width: 150px;
+    height: 20px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #000;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1rem;
+    padding: 0px 10px;
+}
+.searchbox input::placeholder {
+    color: black;
+    background: transparent;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-family: poppins;
+}
+/* Header section style end */
+
+/* section1 style start */
+.section1{
+    position: absolute;
+    left: 15%;
+    top: 50%;
+    transform: translate(-15%, -50%);
+}
+.section1 img{
+    height: 300px;
+}
+.section1Button{
+    position: absolute;
+    top: 50%;
+    left: 90%;
+    transform: translate(-90%, -50%);
+}
+h1 {
+    font-size: 3rem;
+}
+.summer {
+    letter-spacing: 1.2rem;
+}
+.collection {
+    padding-bottom: 2rem;
+}
+span {
+    color: #686de0;
+}
+.btn {
+    background: #353b48;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 1rem 3rem;
+    border-radius: .5rem;
+    font-size: 1rem;
+    letter-spacing: .1rem;
+}
+/* section1 style end */
+
+/* Icon Area style start */
+.iconArea {
+    position: fixed;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 2rem;
+    background: #ffffff;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+    padding: 5px 0;
+    z-index: 999;
+}
+.iconArea a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 15px;
+    font-size: 1.5rem;
+    color: #353b48;
+}
+.iconArea a:hover .fa-facebook {
+    color: #0652DD;
+}
+.iconArea a:hover .fa-twitter {
+    color: #00a8ff;
+}
+.iconArea a:hover .fa-instagram {
+    color: #0097e6;
+}
+.iconArea a:hover .fa-youtube {
+    color: #ff3838;
+}
+
+/* Icon Area style End */
+
+/* Product section style Start */
+.product-section {
+    width: 85%;
+    background: #ffffff;
+    box-shadow: 2px 2px 30px rgba(167, 158, 245, 0.2);
+    display: flex;
+    margin: 30px auto;
+    flex-direction: column;
+    align-items: center;
+    padding:40px 20px;
+	margin-top: 60px;
+	position: relative;
+	background-size:1000px;
+	border-radius: 10px;
+}
+.product-section > h3 {
+    margin: 20px;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.05);
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 2rem;
+    color: #323543;
+}
+.product {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px 0;
+    width: 100%;
+}
+.product-box {
+    width: 250px;
+    height: 330px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 8px;
+    position: relative;
+    margin: 10px 30px;
+}
+.product-box img {
+    height: 180px;
+}
+.product-box p{
+    color: #4d4d4d70;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+.product-box a{
+    color: #2c2c2c;
+    font-family: poppins;
+    font-size: 1rem;
+}
+.BuyBtn {
+    position: absolute;
+    width: 140px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: calibri;
+    left: 50%;
+    bottom: -20px;
+    transform: translateX(-50%);
+    border-radius: 15% 15% 15% 15% / 50% 50% 50% 50%;
+    background: linear-gradient(120deg, #6b60ec 20%, #a166f4);
+    color: #ffffff;
+    display: none;
+    animation: fade 0.2s;
+}
+.product-box:hover .BuyBtn {
+    display: flex;
+}
+.product-box:hover {
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+    color: #ffffff;
+}
+.product-box:hover a:last-child{
+    color: #fff;
+    transition: all ease 0.3s;
+}
+/* Product section style end */
+
+/* About Section Start */
+.about {
+    display: flex;
+    width: 85%;
+    margin: 50px auto;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+}
+.about .aboutBox {
+    width: 40%;
+    font-family: cursive;
+}
+.aboutBox img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.aboutBox h1 {
+    color: #333333;
+    font-weight: 700;
+    font-size: 3rem;
+    margin: 0;
+}
+.aboutBox h4 {
+    color: #333333;
+    font-weight: 400;
+    font-size: 2rem;
+    margin: 2px 0;
+    margin-bottom: 10px;
+}
+.aboutBox p {
+    font-size: 1rem;
+    color: #bdbdbd;
+    letter-spacing: 0.5px;
+}
+/* About Section End */
+
+/* Notification section start */
+.notification {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid rgba(0,0,0,0.03);
+}
+.notification h1 {
+    font-size: 2rem;
+}
+.notificationInput {
+    width: 500px;
+    height: 60px;
+    line-height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7% 7% 7% 7% / 50% 50% 50% 50%;
+    padding: 5px 20px;
+    box-shadow:  2px 5px 30px rgba(0,0,0,0.1);
+    margin-top: 30px;
+}
+.notificationInput input {
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.notificationInput .notificationBtn {
+    background: #333333;
+    width: 100px;
+    color: #fff;
+    border-radius: 30px;
+    align-items: center;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.notificationBtn:hover {
+    background: #686de0;
+}
+footer {
+    background: #000;
+    padding: 20px;
+}
+footer p {
+    color: #f2f2f2;
+    text-align: center;
+}
+/* Notification section start */
